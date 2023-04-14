@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chasing the Clicks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .click-counter {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .click-button,
+        .reset-button {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .click-button:hover,
+        .reset-button:hover {
+            background-color: #0056b3;
+        }
+
+        .reset-button {
+            margin-left: 10px;
+        }
+
+        .geography-table {
+            margin-top: 50px;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .geography-table th,
+        .geography-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .geography-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chasing the Clicks</h1>
+        <div class="click-counter">Click Count: <span id="count">0</span></div>
+        <button class="click-button" onclick="incrementCount()">Click me</button>
+        <button class="reset-button" onclick="resetCounts()">Reset</button>
+    </div>
+    <table class="geography-table" id="geographyTable">
+        <tr>
+            <th>Country</th>
+            <th>Click Count</th>
+        </tr>
+    </table>
+    <script src="clicks.js"></script>
+    
+</body>
+</html>
